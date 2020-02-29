@@ -3,7 +3,7 @@
 	<table border="4">
 		<caption><h3>Emberek akikre büszkék lehetünk<h3></caption>
 		<tr>
-			<th rowspan="3"> <img src="./pictures/Illy_Ferenc.jpg" > </th>
+			<th rowspan="3"> <img class="myImg" src="/pictures/Illy_Ferenc.jpg" onclick="myFunction(this);"> </th>
 			<th> Illy Ferenc </th>
 		</tr>
 		<tr>
@@ -13,7 +13,7 @@
 		<tr>
 		</tr>
 		<tr>
-			<th rowspan="3"> <img src="./pictures/slajos.jpg" alt=""onmousedown="document.images['large'].src='lajos.jpg'"> </th>
+			<th rowspan="3"> <img class="myImg" src="/pictures/Lajos.jpg" onclick="myFunction(this);"> </th>
 			<th> Horváth Lajos </th>
 		</tr>
 		<tr>
@@ -23,7 +23,7 @@
 		<tr>
 		</tr>
 		<tr>
-			<th rowspan="3"> <img src="./pictures/edit.jpg" > </th>
+			<th rowspan="3"> <img class="myImg" src="/pictures/Edit.jpg" onclick="myFunction(this);" > </th>
 			<th> Juhász Edit </th>
 		</tr>
 		<tr>
@@ -34,4 +34,28 @@
 		</tr>
 	</table>
 	
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<script>
+
+function myFunction (pict) {
+	var modal = document.getElementById("myModal");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	 modal.style.display = "block";
+	 modalImg.src = pict.src;
+	 captionText.innerHTML = pict.alt;
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+}
+</script>
 </article>

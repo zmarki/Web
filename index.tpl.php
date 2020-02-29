@@ -58,7 +58,9 @@
 			</section>-->
 		</aside>
 		<div class="page">
-		<?php include("{$keres['fájl']}.tpl.php"); ?>
+		
+		<?php
+			include("{$keres['fájl']}.tpl.php"); ?>
 		</div>
 	</div>
 	<footer>

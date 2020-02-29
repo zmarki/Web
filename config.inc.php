@@ -26,4 +26,7 @@
 	'haza'=>array('value'=>'haza','link'=>'https://www.facebook.com/akavehaza/', 'nev'=>'A Kávé Háza'),
 	'kek'=>array('value'=>'kek', 'link'=>'https://www.facebook.com/kekelefantkavezo/', 'nev'=>'Kék Elefánt'),
 	);
+	
+	$sikeres= array('fájl'=>'accept', 'szoveg'=>'Sikeres');
+	
 ?>
