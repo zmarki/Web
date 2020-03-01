@@ -187,6 +187,9 @@ div.torzs{
 			margin-right: 300px;		
 		}
 		
+		article.hof table tr {
+			height:30px;
+		}
 		
 		article.hof img.myImg {
 			width: 150px;
@@ -249,7 +252,7 @@ div.torzs{
 			to {transform:scale(1)}
 		}
 
-		article.hof .close {
+		article.hof span.close {
 			position: absolute;
 			top: 15px;
 			right: 35px;
@@ -259,8 +262,7 @@ div.torzs{
 			transition: 0.3s;
 		}		
 
-		article.hof .close:hover,
-		.close:focus {
+		article.hof span.close:hover, span.close:focus {
 			color: #bbb;
 			text-decoration: none;
 			cursor: pointer;
